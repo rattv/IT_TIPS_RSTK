@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'RostelecomBasis-Bold';
+    src: url('../fonts/RostelecomBasis-Bold.woff') format('woff'), url('../fonts/RostelecomBasis-Bold.woff2') format('woff2');
+}
+
+html {
+    position:relative; 
+    min-height:100%;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*==========PRELOADER===========*/
+
+.preloader {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 2;
+}
+
+.load {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+.loader hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2s ease infinite;
+}
+
+.loader :first-child {
+    background: #ee5b2f;
+    animation-delay: -1.5s;
+}
+
+.loader :nth-child(2) {
+    background: #293b63;
+    animation-delay: -1s;
+}
+
+.loader :nth-child(3) {
+    background: #77b7db;
+    animation-delay: -0.5s;
+}
+
+.loader :last-child {
+    background: #7800ff;
+}
+
+@keyframes spin {
+    0%,
+    100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(160%);
+    }
+    50% {
+        transform: translate(160%, 160%);
+    }
+    75% {
+        transform: translate(0, 160%);
+    }
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.title {
+    font-family: 'RostelecomBasis-Bold';
+    font-size: 36px;
+    text-align: center;
+}
+
+
+/*============HEADER=============*/
+
+header {
+    box-shadow: 0 5px 5px -5px #293b63;
+}
+
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title-it-tips {
+    font-family: 'RostelecomBasis-Bold';
+    font-size: 18px;
+}
+
+
+/*==================MAIN=============*/
+
+main{
+    padding-bottom: 100px;
+}
+
+.title {
+    font-family: 'RostelecomBasis-Bold';
+    font-size: 48px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: #293b63;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description>img{
+    width: 446px;
+    height: 173px;
+}
+
+.main-subtitle {
+    font-size: 20px;
+    padding-left: 50px;
+    color: #293b63;
+}
+
+.main-subtitle>span {
+    color: #ff4f13;
+    font-weight: 600;
+}
+
+
+/*==========WINDOWS BUTTONS=========*/
+
+.contant {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 16px 0;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.b-blue {
+    color: #7800ff;
+    border: solid 2px #7800ff;
+}
+
+.b-purple {
+    color: #9813c6;
+    border: solid 2px #9813c6;
+}
+
+.b-crimson {
+    color: #af209e;
+    border: solid 2px #af209e;
+}
+
+.b-pink {
+    color: #c32c7b;
+    border: solid 2px #c32c7b;
+}
+
+.b-red {
+    color: #d5365c;
+    border: solid 2px #d5365c;
+}
+
+.b-lightorange {
+    color: #e94239;
+    border: solid 2px #e94239;
+}
+
+.b-orange {
+    color: #ff4f13;
+    border: solid 2px #ff4f13;
+}
+
+.b-blue:hover {
+    cursor: pointer;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.b-purple:hover {
+    cursor: pointer;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.b-crimson:hover {
+    cursor: pointer;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.b-pink:hover {
+    cursor: pointer;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.b-red:hover {
+    cursor: pointer;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.b-lightorange:hover {
+    cursor: pointer;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.b-orange:hover {
+    cursor: pointer;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+/*=======TABLE=======*/
+
+.main-keys {
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+.text-keys,
+.file-keys,
+.explore-keys,
+.window-keys,
+.dialogwindow-keys,
+.browser-keys {
+    display: none;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+th,
+td:first-child {
+    background: #ff936e;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 200px;
+}
+
+th,
+td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+td {
+    background: #fde2d8;
+    text-align: center;
+    width: 500px;
+}
+
+th:first-child,
+td:first-child {
+    text-align: center;
+}
+
+
+/*================FOOTER============*/
+
+footer {
+    box-shadow: 0 -5px 5px -5px #293b63;
+    height: 55px;
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+}
+
+.footer-title {
+    font-family: 'RostelecomBasis-Bold';
+    text-align: right;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:1095px) {
+    th,
+    td:first-child {
+        width: 150px;
+    }
+    td {
+        width: 400px;
+    }
+}
